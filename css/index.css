@@ -1,0 +1,102 @@
+.square-1 {
+    width: 30vw;
+    height: 30vw;
+    background-color: #FFBF17;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50vh;
+    left: -15vw;
+    overflow: hidden;
+}
+
+.square-1 p {
+    transform: rotate(-35deg);
+}
+
+.square-2 {
+    width: 120vw;
+    height: 120vw;
+    background-color: #FF4717;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 75vh;
+    right: -60vw;
+    z-index: 40;
+}
+
+.square-2 ol {
+    list-style-type: none;
+    counter-reset: num;
+    position: relative;
+    margin: 50vw 0 0 -50vw;
+    padding: 15px 0 5px 0;
+    font-size: 16px;
+}
+
+.square-2 li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 30px 0;
+    line-height: 1.2;
+}
+
+.square-2 li:after {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -43px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+/* Вертикальная линия */
+.square-2 ol:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: -30px;
+    width: 1px;
+    border-left: 3px solid #fff;
+}
+
+/* Скрытие линии у последнего li */
+.square-2 ol li:last-child:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -38px;
+    width: 28px;
+    background: #FF4717;
+}
+
+.square-2 li:hover a {
+    color: rgb(29 78 216);
+}
+
+.square-2 li:hover:after {
+    color: rgb(29 78 216);
+}
+
+.square-2 a {
+    font-family: Caveat, cursive;
+    color: #fff;
+    transition: color ease-in-out .2s;
+}
+
+.parallax {
+    height: 720px;
+    width: 100vw;
+    background: url("../img/parallax.jpg") no-repeat fixed;
+    background-size: cover;
+}
