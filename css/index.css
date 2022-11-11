@@ -1,18 +1,3 @@
-.square-1 {
-    width: 30vw;
-    height: 30vw;
-    background-color: #FFBF17;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50vh;
-    left: -15vw;
-    overflow: hidden;
-}
-
-.square-1 p {
-    transform: rotate(-35deg);
-}
-
 .square-2 {
     width: 120vw;
     height: 120vw;
@@ -80,23 +65,7 @@
     background: #FF4717;
 }
 
-.square-2 li:hover a {
-    color: rgb(29 78 216);
-}
-
-.square-2 li:hover:after {
-    color: rgb(29 78 216);
-}
-
-.square-2 a {
-    font-family: Caveat, cursive;
-    color: #fff;
-    transition: color ease-in-out .2s;
-}
-
 .parallax {
-    height: 720px;
-    width: 100vw;
     background: url("../img/parallax.jpg") no-repeat fixed;
     background-size: cover;
 }

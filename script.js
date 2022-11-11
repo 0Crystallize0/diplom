@@ -25,15 +25,7 @@ navLinks.forEach(elem => {
         }
     }
 
-    function backToTop() {
-        if (window.scrollY > 0) {
-            window.scrollBy(0, -80);
-            setTimeout(backToTop, 0);
-        }
-    }
-
     const goTopBtn = document.querySelector('.back_to_top');
 
     window.addEventListener('scroll', trackScroll);
-    goTopBtn.addEventListener('click', backToTop);
 })();

@@ -5,17 +5,34 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab", serif;
 }
 
-p, a, span {
+p, a, span, li::marker {
     font-family: Roboto, sans-serif;
     font-size: 1.25em;
+    line-height: 2rem;
 }
 
 .rotateY:hover i {
     transform: rotateY(180deg);
+}
+
+.square-1 {
+    width: 30vw;
+    height: 30vw;
+    background-color: #FFBF17;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50vh;
+    left: -15vw;
+    overflow: hidden;
+}
+
+.square-1 p {
+    transform: rotate(-35deg);
 }
