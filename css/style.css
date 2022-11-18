@@ -652,6 +652,10 @@ video {
   z-index: 40;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -665,6 +669,21 @@ video {
 .mx-24{
   margin-left: 6rem;
   margin-right: 6rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .ml-3{
@@ -691,8 +710,8 @@ video {
   margin-top: 4rem;
 }
 
-.mt-\[30vh\]{
-  margin-top: 30vh;
+.mt-\[20vw\]{
+  margin-top: 20vw;
 }
 
 .mr-16{
@@ -739,8 +758,8 @@ video {
   height: 720px;
 }
 
-.h-\[100vh\]{
-  height: 100vh;
+.h-\[60vw\]{
+  height: 60vw;
 }
 
 .w-6{
@@ -765,6 +784,10 @@ video {
 
 .w-\[35\%\]{
   width: 35%;
+}
+
+.w-1\/4{
+  width: 25%;
 }
 
 .max-w-\[45\%\]{
@@ -897,8 +920,9 @@ video {
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.bg-gray-200\/75{
-  background-color: rgb(229 231 235 / 0.75);
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300{
@@ -911,6 +935,26 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -921,6 +965,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-\[\'Roboto_Slab\'\]{
@@ -991,6 +1039,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .drop-shadow-md{
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1035,14 +1089,35 @@ html{
   scroll-behavior: smooth;
 }
 
+body {
+  background: rgba(211, 211, 211, 0.3);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 p, a, span, li::marker {
   font-family: Roboto, sans-serif;
-  font-size: 1.25em;
-  line-height: 2rem;
+  font-size: 1.125em;
+  line-height: 1.75rem;
 }
 
 .rotateY:hover i {
@@ -1173,12 +1248,12 @@ p, a, span, li::marker {
 }
 
 @media (min-width: 1536px){
-  .\32xl\:mt-\[70vh\]{
-    margin-top: 70vh;
+  .\32xl\:mt-\[45vw\]{
+    margin-top: 45vw;
   }
 
-  .\32xl\:h-\[130vh\]{
-    height: 130vh;
+  .\32xl\:h-\[60vw\]{
+    height: 60vw;
   }
 
   .\32xl\:text-4xl{

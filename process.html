@@ -16,9 +16,9 @@
     <title>Процесс веб-разработки</title>
 </head>
 <body id="top">
-    <nav class="bg-gray-200/75 sticky top-0 z-50">
+    <nav class="bg-gray-200 shadow-xl sticky top-0 z-50">
     <div class="container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
-        <a href="index.html" class="rotateY flex block pl-3 pr-4 py-2 text-gray-700 md:p-0 rounded focus:outline-none transition-colors md:mr-10">
+        <a href="index.html" class="rotateY flex block pl-3 pr-4 py-2 text-gray-700 md:p-0 rounded focus:outline-none transition-colors md:mr-10 md:hover:text-blue-700">
             <i class="material-icons text-5xl transition ease-in-out duration-500">home</i>
             <span class="self-center text-3xl font-semibold font-['Roboto_Slab'] whitespace-nowrap">Главная</span>
         </a>
@@ -43,7 +43,7 @@
 
         <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
             <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
-                <li class="menu-item">
+                <li class="menu-item flex">
                     <a href="process.html"
                        class="nav-link flex items-center text-blue-700 block pl-3 pr-4 py-2 md:p-0">
                         <i class="material-icons mr-2 text-[1.5rem]">code</i>
@@ -54,7 +54,7 @@
                     </a>
                 </li>
 
-                <li class="menu-item">
+                <li class="menu-item flex">
                     <a href="technology.html"
                        class="nav-link flex items-center text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
                         <i class="material-icons mr-2 text-[1.5rem]">bolt</i>
@@ -65,7 +65,7 @@
                     </a>
                 </li>
 
-                <li class="menu-item">
+                <li class="menu-item flex">
                     <a href="current.html"
                        class="nav-link flex items-center text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
                         <i class="material-icons mr-2 text-[1.5rem]">biotech</i>
@@ -76,7 +76,7 @@
                     </a>
                 </li>
 
-                <li class="menu-item">
+                <li class="menu-item flex">
                     <a href="https://github.com/0Crystallize0/diplom" target="_blank"
                        class="nav-link flex items-center text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
                         <i class="fab fa-github mr-2 text-[1.5rem]"></i>
@@ -91,88 +91,106 @@
 </nav>
 
     <main>
-        <section class="main_heading mx-10 mt-10 h-[70vh]">
-            <h1 class="text-center text-5xl">Процесс WEB-разработки</h1>
+        <section class="main_heading mx-10 my-10">
+            <h1 class="text-center">Процесс WEB-разработки</h1>
             <p class="text-center mx-24 mt-5">WEB-разработка — процедура создания WEB-приложения или WEB-сайта. Основными этапами этого процесса являются такие мероприятия, как WEB-дизайн, вёрстка страниц сайта, WEB-программирование на стороне сервера и клиента, а также работы по конфигурированию WEB-сервера.</p>
 
             <div class="flex justify-around items-center mt-16">
                 <img src="img/development.jpg" alt="programing" class="w-[35%] mr-16 rounded-xl">
 
                 <ul class="process-heading-inner list-decimal">
-                    <li class="mb-2.5"><a href="#_1" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Проектирование WEB-приложения или самого сайта, то есть сбор и последующий анализ всех требований, выработка технического задания, составление проекта интерфейсов</a></li>
-                    <li class="mb-2.5"><a href="#_2" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Разработка дизайнерской концепции интернет ресурса</a></li>
-                    <li class="mb-2.5"><a href="#_3" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Верстание шаблонов и страниц</a></li>
-                    <li class="mb-2.5"><a href="#_4" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Создание функциональных инструментов, или же интеграция в уже существующую CMS</a></li>
-                    <li class="mb-2.5"><a href="#_5" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Размещение на сайте и оптимизация</a></li>
-                    <li class="mb-2.5"><a href="#_6" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Тестирование сайта и внесение, при необходимости, корректировок</a></li>
-                    <li class="mb-2.5"><a href="#_7" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Запуск созданного проекта на общественной площадке в сети интернет</a></li>
-                    <li class="mb-2.5"><a href="#_8" class="text-2xl ease-in-out duration-300 hover:text-blue-700">Работы по обслуживанию уже действующего портала или его программной части</a></li>
+                    <li class="mb-2.5"><a href="#_1" class="text-2xl duration-300 hover:text-blue-700">Техническое задание (ТЗ)</a></li>
+                    <li class="mb-2.5"><a href="#_2" class="text-2xl duration-300 hover:text-blue-700">Дизайн страниц WEB-сайта: основных и типовых</a></li>
+                    <li class="mb-2.5"><a href="#_3" class="text-2xl duration-300 hover:text-blue-700">Вёрстка страниц и шаблонов в HTML</a></li>
+                    <li class="mb-2.5"><a href="#_4" class="text-2xl duration-300 hover:text-blue-700">Программирование</a></li>
+                    <li class="mb-2.5"><a href="#_5" class="text-2xl duration-300 hover:text-blue-700">Тестирование</a></li>
+                    <li class="mb-2.5"><a href="#_6" class="text-2xl duration-300 hover:text-blue-700">Размещение нового портала в Интернет-сети</a></li>
+                    <li class="mb-2.5"><a href="#_7" class="text-2xl duration-300 hover:text-blue-700">Наполнение сайта контентом и его публикация</a></li>
+                    <li class="mb-2.5"><a href="#_8" class="text-2xl duration-300 hover:text-blue-700">SEO-оптимизация: внутренняя и внутренняя</a></li>
+                    <li class="mb-2.5"><a href="#_9" class="text-2xl duration-300 hover:text-blue-700">Окончательная сдача всего проекта</a></li>
                 </ul>
             </div>
         </section>
 
         <section class="mx-10">
-            <div id="_1">
-                <h2 class="text-2xl">Проектирование WEB-приложения или самого сайта, то есть сбор и последующий анализ всех требований, выработка технического задания, составление проекта интерфейсов</h2>
+            <div id="_1" class="py-16">
+                <h2>Техническое задание (ТЗ)</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <p>Его разработку для WEB-специалистов выполняет, обычно, менеджер всего интернет-проекта. Ну, а работа с самим заказчиком начинается с заполнения брифа, где он излагает свои желания в отношении структуры сайта и его визуализации, уточняет ошибки и недоработки, в случае наличия, в прошлой версии WEB-сайта, приводя свои примеры, как у его конкурентов. На основании брифа, менеджер создаёт ТЗ, учитывая при этом, имеющиеся в наличии возможности дизайнерских и программных инструментов. Сам такой этап оканчивается лишь после утверждения ТЗ клиентом. Однако, следует заметить, что все этапы проекта WEB-сайта довольно сильно зависимы от множества различных факторов, как, например, величина объёма интернет-портала, его функциональность, а также задачи для которых предназначен создаваемый интернет-ресурс и многое-многое иное. Но, тем не менее, имеется и некоторое количество этапов, которые непременно присутствуют при планировании абсолютно любого будущего проекта.</p>
+                    <img src="img/tz.png" alt="tz" class="w-1/4 mx-10">
                 </div>
             </div>
 
-            <div id="_2">
-                <h2 class="text-2xl">Разработка дизайнерской концепции интернет ресурса</h2>
+            <div id="_2" class="py-16">
+                <h2>Дизайн страниц WEB-сайта: основных и типовых</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <img src="img/design.jpg" alt="design" class="w-1/3 mx-10">
+                    <p>Любая работа по интернет-сайту начинается с создания его дизайна, обычно используя для этого графический редактор. WEB-дизайнер создаёт, обыкновенно, несколько таких вариантов, но в строгом соответствии с ТЗ. При этом, отдельно разрабатывается дизайн «Главной» страницы сайта, и далее - дизайн остальных типовых страниц, как-то, например: новости, статьи, о нас, каталог. Собственно, сам «дизайн» являет собой графический файл, как слоёный рисунок, включающий в себя более мелкие картинки в виде слоёв в общей картинке. При этом специалист обязательно учитывает все ограничения для стандарта HTML, то есть не вырабатывает дизайн, который невозможно будет впоследствии реализовать стандартными HTML-средствами. Исключением является только лишь Flash-дизайн. Количество самих эскизов и порядок их предъявления заказчику заранее оговариваются с менеджеров всего проекта, который выполняет контроль запланированных сроков. Ещё, также больших WEB-фирмах в процессе принимает участие и Арт-директор, контролирующий качество исполнения графики. Этот этап точно также, как и предыдущий, оканчивается его утверждением у заказчика.</p>
                 </div>
             </div>
 
-            <div id="_3">
-                <h2 class="text-2xl">Верстание шаблонов и страниц</h2>
+            <div id="_3" class="py-16">
+                <h2>Вёрстка страниц и шаблонов в HTML</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <p>Утверждённый клиентом дизайн далее передаётся специалисту-верстальщику, «нарезающему» графическое изображение на отдельные картинки, из которых позже будет сложена HTML-страница. В ходе такой работы создаётся программный код, который возможно уже смотреть при помощи какого-либо браузера (интернет-обозревателя). Ну, а как таковые эти типовые страницы, впоследствии, будут применяться, как HTML-шаблоны.</p>
+                    <img src="img/html.png" alt="html" class="w-1/4 mx-10">
                 </div>
             </div>
 
-            <div id="_4">
-                <h2 class="text-2xl">Создание функциональных инструментов, или же интеграция в уже существующую CMS</h2>
+            <div id="_4" class="py-16">
+                <h2>Программирование</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <img src="img/js.png" alt="js" class="w-1/4 mx-10">
+                    <p>После проведённых, выше упомянутых мероприятий, готовые файла в формате HTML передаются в работы WEB-программисту. Разработка программного обеспечения интернет-сайта вполне может выполняться, как «с самого нуля», так и на основании системы CMS, зачастую так называемого «CMS-движка». В случае применения системы управления сайтом следует отметить, что она сама, в каком-то смысле слова, уже готовый сайт, включающий в себя заменяемые блоки. Ну, а самого программиста, в таком случае, будет более верно называть «CMS-специалистом», который должен заменить существующий стандартный шаблон, на новый оригинальный, разработанный на базе начального WEB-дизайна, с учётом индивидуальных пожеланий заказчика. При разработке программного обеспечения интернет-сайта специалисту по CMS также устанавливаются контрольные сроки проведения работ.</p>
                 </div>
             </div>
 
-            <div id="_5">
-                <h2 class="text-2xl">Размещение на сайте и оптимизация</h2>
+            <div id="_5" class="py-16">
+                <h2>Тестирование</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <p>Сам такой процесс вполне может содержать в себе самые различные виды проверок, как-то, например: внешний вид страницы сайта с увеличенными шрифтами, при различных размерах браузерного окна, или из-за отсутствия Flash-плеера, и многое иное. Также используется и пользовательское тестирование, так называемое - юзабилити. Обнаруженные появившиеся ошибки в работе сайта отправляются для их исправления до тех самых пор, пока исполнитель их не устранит. В этом случае сроки работы контролирует всё тот же проектный менеджер. Хотя, на этапе тестирования ещё привлекают к работе и самого дизайнера, чтобы он осуществлял авторский надзор.</p>
+                    <img src="img/testing.svg" alt="testing" class="w-1/3 mx-10">
                 </div>
             </div>
 
-            <div id="_6">
-                <h2 class="text-2xl">Тестирование сайта и внесение, при необходимости, корректировок</h2>
+            <div id="_6" class="py-16">
+                <h2>Размещение нового портала в Интернет-сети</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <img src="img/hosting.jpg" alt="hosting" class="w-1/3 mx-10">
+                    <p>Файлы разработанного WEB-сайта помещают на сервере, например, провайдера, где осуществляют необходимые настройки. Следует отметить, что на таком этапе интернет-сайт ещё пока закрыт для широкого круга пользователей.</p>
                 </div>
             </div>
 
-            <div id="_7">
-                <h2 class="text-2xl">Запуск созданного проекта на общественной площадке в сети интернет</h2>
+            <div id="_7" class="py-16">
+                <h2>Наполнение сайта контентом и его публикация</h2>
 
-                <div class="process-content">
-
+                <div class="process-content flex items-center justify-between mt-10">
+                    <p>Новый интернет-сайт наполняют контентом, то есть различными текстами, изображениями, файлами для скачки и тому подобным. Иногда сами тексты составляются копирайт-специалистом фирмы-разработчика сайта, иногда ими занимается сам клиент, нанимая автора со стороны. Такой вопрос решается ещё на стадии составления самого ТЗ, так как, если контент разрабатывается копирайтером разработчика, то это обязательно согласовывается с заказчиком одновременно с иными этапами реализуемого проекта.</p>
+                    <img src="img/copyright.jpg" alt="copyright" class="w-1/3 mx-10">
                 </div>
             </div>
 
-            <div id="_8">
-                <h2 class="text-2xl">Работы по обслуживанию уже действующего портала или его программной части</h2>
+            <div id="_8" class="py-16">
+                <h2>SEO-оптимизация</h2>
 
-                <div class="process-content">
+                <div class="process-content flex items-center justify-between mt-10">
+                    <img src="img/seo.png" alt="seo" class="w-1/3 mx-10">
+                    <p>Внутренняя оптимизация связана с определёнными изменениями, вносимыми в сам интернет-сайт. Процесс оптимизации начинается с составления, так называемого, семантического ядра, для которого подбираются такие ключевые слова, которые завладеют самым большим вниманием пользователей портала, и с которыми обойти конкурентов проще. Впоследствии таковые «ключевики» вносятся на сам интернет-портал и все гиперссылки, тексты и метатеги адаптируются таким образом, чтобы поисковые интернет-системы смогли их быстро обнаруживать по составленным «ключевикам». Внешнее SEO, как правило, сводится, к построению определённой структуры для входящих ссылок на новый сайт. В принципе – это и есть сама раскрутка нового портала и к созданию сайта внешняя оптимизация не имеет никакого отношения. Сама же SEO-оптимизация подразделяется на так называемые: «белую» и «чёрную», после проведения первой интернет-портал попадает в ТОП, а после проведения второй - в «бан» поисковых систем. Следует заметить, что «белая» оптимизация – это довольно длительный и трудоёмкий процесс, при котором стоимость его самого которого может превысить в разы материальные затраты на WEB-разработку самого сайта.</p>
+                </div>
+            </div>
 
+            <div id="_9" class="py-16">
+                <h2>Окончательная сдача всего проекта</h2>
+
+                <div class="process-content flex items-center justify-between mt-10">
+                    <p>Заказчик ознакамливается с полностью готовым заказом и в случае, когда его всё полностью устраивает, то подписывают соответствующие документы, как-то Акт выполненных работ, о сдаче ему всего проекта. Кроме того, на таком этапе работы осуществляется ещё и обучение клиента или его представителя необходимым навыкам администрирования нового сайта.</p>
+                    <img src="img/complete.png" alt="complete" class="w-1/3 mx-10">
                 </div>
             </div>
         </section>
