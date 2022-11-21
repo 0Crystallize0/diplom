@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -23,17 +23,18 @@ h1 {
     line-height: 1;
 }
 
-h2 {
+h2, li::marker {
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.125em;
     line-height: 1.75rem;
+    font-weight: bold;
 }
 
-p, a, span, li::marker {
+p, a, span, li {
     font-family: Roboto, sans-serif;
     font-size: 1.125em;
     line-height: 1.75rem;
@@ -41,19 +42,4 @@ p, a, span, li::marker {
 
 .rotateY:hover i {
     transform: rotateY(180deg);
-}
-
-.square-1 {
-    width: 30vw;
-    height: 30vw;
-    background-color: #FFBF17;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50vh;
-    left: -15vw;
-    overflow: hidden;
-}
-
-.square-1 p {
-    transform: rotate(-35deg);
 }

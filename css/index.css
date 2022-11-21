@@ -1,3 +1,18 @@
+.square-1 {
+    width: 30vw;
+    height: 30vw;
+    background-color: #FFBF17;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50vh;
+    left: -15vw;
+    overflow: hidden;
+}
+
+.square-1 p {
+    transform: rotate(-35deg);
+}
+
 .square-2 {
     width: 120vw;
     height: 120vw;
